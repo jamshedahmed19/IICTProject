@@ -1,0 +1,124 @@
+
+/*========================= fonts import ==================================*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*------------------------------------------------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Satisfy';
+}
+
+
+a,
+a:hover,
+a:active{
+    text-decoration: none;
+    color: black;
+}
+
+/* ======== Header ======= */
+
+/* ======== social icons ======= */
+
+.top-area-container{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2
+}
+
+.top-area .social-icons img{
+    height: 24px;
+    width: 24px;
+    margin: 13px 0px 13px 10px;
+}
+
+.top-area .social-icons img:hover{
+    height: 32px;
+    width: 32px;
+    transition: 0.5s;
+    margin: 9px 0px 9px 10px;
+}
+
+.top-area .search-btn{
+    float: right;
+}
+
+.top-area .search-btn img{
+    height: 24px;
+    width: 24px;
+    margin: 13px 10px 13px 0px;
+}
+
+.top-area .search-btn img:hover{
+    height: 32px;
+    width: 32px;
+    transition: 0.5s;
+    margin: 9px 10px 9px 0px;
+}
+/*======== social icons area ended ======= */
+.logo_area .foodguide-logo{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.logo_area .foodguide-logo img{
+    height: 100px;
+    width: 220px;
+}
+
+.navbar{
+    background-color: #fff
+}
+
+.navbar .navbar-nav .nav-item{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+.dropdown-item{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: orange;
+}
+
+.nav-item{
+    color: orange;
+}
+
+.dropdown-item:hover{
+    color: #fc6c3f;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+/* ======== Header Area End ======= */
+
+/* ======== Welcome Area start ======= */
+.carousel-inner .carousel-item{
+    width: 100%;
+    height: 700px;
+}
+
+/* ======== Welcome Area ended ======= */
+
+/* ======== Popular section Area start ======= */
+
+.popular-posts h1{
+    text-align: center;
+    line-height: 300%;
+    font-family: 'Satisfy';
+}
+
+.popular-posts .cards{
+    display: inline;
+}
