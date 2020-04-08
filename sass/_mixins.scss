@@ -41,7 +41,7 @@
         transition: .5s ease;
       }
       
-      .col-3:hover .overlay {
+       .col-lg-3:hover  .overlay, .col-md-6:hover  .overlay, .col-sm-12:hover .overlay {
         height: 30%;
         opacity: 0.65;
       }

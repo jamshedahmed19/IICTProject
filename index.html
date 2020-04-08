@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">  
+    <!--Scroll library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 
     <!-- MY CSS -->
     <link rel="stylesheet" type="text/css" href="css/_style.css">
@@ -39,7 +40,7 @@
       <div class="container"></div>
            <div class="row">
                 <div class="col-12">
-                    <div class="logo_area text-center">
+                    <div class="logo_area text-center" data-aos="zoom-in">
                         <a href="index.html" class="foodguide-logo"><img src="logo.png"></a>
                     </div>
                 </div>
@@ -59,25 +60,25 @@
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Desi</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Fast Food</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="#">Deserts</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Restaurants</a>
                           </li>
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Dropdown link
+                              See More
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
+                              <a class="dropdown-item" href="#">About us</a>
+                              <a class="dropdown-item" href="#">Contact us</a>
+                              <a class="dropdown-item" href="#">FAQs</a>
                             </div>
                           </li>
                         </ul>
@@ -135,28 +136,28 @@
   <div class="container">
     <h1>Our picks</h1>
     <div class="row">
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-left">
         <a><img class="img-fluid" src="images/Content images/1.jpg" alt=""></a>
         <div class="overlay">
           <a><div class="text">Read More</div></a>
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-right">
         <a><img class="img-fluid" src="images/Content images/2.jpg" alt=""></a>
         <div class="overlay">
           <a><div class="text">Read More</div></a>
         </div>        
       </div>
 
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-left">
         <a><img class="img-fluid" src="images/Content images/2.jpg" alt=""></a>
         <div class="overlay">
           <a><div class="text">Read More</div></a>
         </div>        
       </div>
       
-      <div class="col-3">
+      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-right">
         <a><img class="img-fluid" src="images/Content images/2.jpg" alt=""></a>
         <div class="overlay">
           <a><div class="text">Read More</div></a>
@@ -198,7 +199,60 @@
   </div>
 
 
+<!-- Footer-->
+<footer>
+  <div class="footer-container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <div class="logo_area" data-aos="zoom-in">
+          <a href="index.html" class="foodguide-logo"><img src="logo.png"></a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
 
+      <div class="col-lg-4 col-sm-12">
+        <div class="footer-links">
+          <h1>Links</h1>
+          <ul>
+            <li><a class="list-items">DESI</a></li>
+            <li><a class="list-items">FAST FOOD</a></li>
+            <li><a class="list-items">DESERTS</a></li>
+            <li><a class="list-items">RESTAURANTS</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="col-lg-4 col-sm-12">
+          <div class="emailus">
+            <h1>Email Us</h1>
+            <div class="email">
+              <div class="emaillink">
+                <input type="text" placeholder=" Email us">              
+                <a href="mailto:jamsheda4ahmed786@gmail.com">Email</a>
+              </div>
+              <a href="index.html" class="social-icons"><img src="images/icons/f.png"></a>
+              <a href="index.html" class="social-icons"><img src="images/icons/i.png"></a>
+              <a href="index.html" class="social-icons"><img src="images/icons/t.png"></a>
+              <a href="index.html" class="social-icons"><img src="images/icons/y.png"></a>
+            </div>
+          </div>          
+        </div>
+
+      <div class="row">
+        <div class="col-12">
+          <span>&copy; 2020 jamshed ahmed</span>
+        </div>
+      </div>
+    </div>   
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    delay: 150,
+  });
+</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

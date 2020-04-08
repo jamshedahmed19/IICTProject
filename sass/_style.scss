@@ -68,6 +68,17 @@
 // logo area ended
 
 //nav-bar
+.navbar{
+    button{
+        width: 100%;
+        background-color: $orange;
+
+        .navbar-toggler-icon{
+            color: white;
+        }
+    }
+}
+
 .navbar-nav{  
     .nav-item{
         padding: 5px 20px;
@@ -121,7 +132,7 @@
 
 //ourpicks-section ended
 
-/* ======== Popular section Area start ======= */
+// Popular section Area start
 
 .popular-section{    
     h1{
@@ -131,4 +142,100 @@
 
 .popular-posts .cards{
     display: inline;
+}
+
+//popular section ended
+
+// footer
+
+.footer-container{
+    background-color: $black;
+    .row{
+        padding: 50px;
+        background-color: inherit;
+    }
+
+    p{
+    color: $grey;
+    line-height: 200%;
+    padding: 10px 30px;}
+
+    img{
+        width: 230px;
+        height: 100px;
+    }
+
+    h1{
+        @include secHeading;
+        color: $orange;
+        font-family: $sans-serif;
+        font-size: 28px;
+        line-height: 250%;
+        text-align: left;
+    }
+
+    .footer-links{
+        ul{
+            display: block;
+            list-style: none;
+            padding: 0ex;
+                li{
+                padding: 5px;
+                color: $grey;
+                font-family: $serif;
+                border-bottom: 2px solid #404040;
+                text-align: left;
+                font-size: 18px;
+                font-weight: normal;
+                text-transform: uppercase;
+
+                &:hover{
+                    background-color: $chilli-red;
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+
+    .emailus{
+        font-family: $serif;
+
+        .email{
+            padding-top: 30px;
+
+            img{
+                width: 54px;
+                height: 54px;
+                margin: 30px 10px;
+            }
+        }
+        
+        .emaillink{
+            input{
+                width: 60%;
+                height: 40px;
+            }
+
+            a{
+                width: 40%;
+                height: 40px;
+                background-color: $orange;
+                padding: 9px 20px 11px 20px;
+                text-decoration: none;
+                color: white;
+                font-size: 17px;
+
+                &:hover{
+                    background-color: $chilli-red;
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    span{
+        color: #777777;
+    }
+
 }

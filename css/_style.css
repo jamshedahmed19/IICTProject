@@ -5,7 +5,7 @@ body {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Satisfy";
+  font-family: "Raleway";
 }
 
 a:hover:active {
@@ -54,6 +54,14 @@ a:hover:active {
     height: 75px;
     width: 190px;
   }
+}
+
+.navbar button {
+  width: 100%;
+  background-color: #F28705;
+}
+.navbar button .navbar-toggler-icon {
+  color: white;
 }
 
 .navbar-nav .nav-item {
@@ -112,7 +120,7 @@ a:hover:active {
   height: 0;
   transition: 0.5s ease;
 }
-.ourpicks-section .col-3:hover .overlay {
+.ourpicks-section .col-lg-3:hover .overlay, .ourpicks-section .col-md-6:hover .overlay, .ourpicks-section .col-sm-12:hover .overlay {
   height: 30%;
   opacity: 0.65;
 }
@@ -129,7 +137,6 @@ a:hover:active {
   text-align: center;
 }
 
-/* ======== Popular section Area start ======= */
 .popular-section h1 {
   text-align: center;
   line-height: 300%;
@@ -139,4 +146,82 @@ a:hover:active {
 
 .popular-posts .cards {
   display: inline;
+}
+
+.footer-container {
+  background-color: #262626;
+}
+.footer-container .row {
+  padding: 50px;
+  background-color: inherit;
+}
+.footer-container p {
+  color: #777777;
+  line-height: 200%;
+  padding: 10px 30px;
+}
+.footer-container img {
+  width: 230px;
+  height: 100px;
+}
+.footer-container h1 {
+  text-align: center;
+  line-height: 300%;
+  font-size: 36px;
+  color: #8C0303;
+  color: #F28705;
+  font-family: "Lora";
+  font-size: 28px;
+  line-height: 250%;
+  text-align: left;
+}
+.footer-container .footer-links ul {
+  display: block;
+  list-style: none;
+  padding: 0ex;
+}
+.footer-container .footer-links ul li {
+  padding: 5px;
+  color: #777777;
+  font-family: "Raleway";
+  border-bottom: 2px solid #404040;
+  text-align: left;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.footer-container .footer-links ul li:hover {
+  background-color: #8C0303;
+  color: #F28705;
+}
+.footer-container .emailus {
+  font-family: "Raleway";
+}
+.footer-container .emailus .email {
+  padding-top: 30px;
+}
+.footer-container .emailus .email img {
+  width: 54px;
+  height: 54px;
+  margin: 30px 10px;
+}
+.footer-container .emailus .emaillink input {
+  width: 60%;
+  height: 40px;
+}
+.footer-container .emailus .emaillink a {
+  width: 40%;
+  height: 40px;
+  background-color: #F28705;
+  padding: 9px 20px 11px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+.footer-container .emailus .emaillink a:hover {
+  background-color: #8C0303;
+  color: #F28705;
+}
+.footer-container span {
+  color: #777777;
 }
