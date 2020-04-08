@@ -1,0 +1,241 @@
+// ----------Importing ---------
+
+// importing other sass files
+
+
+@import "_variables.scss";
+@import "_starters.scss";
+@import "_mixins.scss";
+
+// ---------------header area--------------------
+
+// social icons
+
+.top-area-container{
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+
+    .social-icons img{
+        height: 24px;
+        width: 24px;
+        margin: 13px 0px 13px 10px;
+
+        &:hover{
+            height: 32px;
+            width: 32px;
+            transition: 0.5s;
+            margin: 9px 0px 9px 10px;
+        }
+    }
+
+    .search-btn{
+        float: right;
+
+        img{
+            height: 24px;
+            width: 24px;
+            margin: 13px 10px 13px 0px;
+        
+            &:hover{
+                height: 32px;
+                width: 32px;
+                transition: 0.5s;
+                margin: 9px 10px 9px 0px;
+            }
+        }
+    }
+}
+
+// social icons area ended
+
+// logo area
+
+.logo_area{
+
+    img{
+        margin: 25px;
+        height: 140px;
+        width: 340px;
+
+        @include mQ(450px){
+            margin: 15px;
+            height: 75px;
+            width: 190px;
+        }
+    }
+}
+
+// logo area ended
+
+//nav-bar
+.navbar{
+    button{
+        width: 100%;
+        background-color: $orange;
+
+        .navbar-toggler-icon{
+            color: white;
+        }
+    }
+}
+
+.navbar-nav{  
+    .nav-item{
+        padding: 5px 20px;
+        font-family: $serif;
+        font-weight: 500;        
+        text-transform: uppercase;
+        .nav-link, .dropdown-item{           
+            font-size: 14px;
+            text-transform: uppercase;
+            color: black;
+
+            &:hover{
+                color: $orange;
+                font-weight: bold;
+            }
+        }
+
+        .nav-link:active{
+            color: $bright-red;
+        }
+        
+    }
+}
+//navbar ended
+/* ======== Header Area End ======= */
+
+/* ======== Welcome Area start ======= */
+
+.welcome-section{    
+    h1{
+        @include secHeading;
+    }
+}
+
+
+.carousel-inner .carousel-item{
+    width: 100%;
+    height: 600px;
+}
+
+// ourpicks-section
+
+.ourpicks-section{
+    h1{
+        @include secHeading;
+    }
+
+    @include overlay;
+
+}
+
+//ourpicks-section ended
+
+// Popular section Area start
+
+.popular-section{    
+    h1{
+        @include secHeading;
+    }
+}
+
+.popular-posts .cards{
+    display: inline;
+}
+
+//popular section ended
+
+// footer
+
+.footer-container{
+    background-color: $black;
+    .row{
+        padding: 50px;
+        background-color: inherit;
+    }
+
+    p{
+    color: $grey;
+    line-height: 200%;
+    padding: 10px 30px;}
+
+    img{
+        width: 230px;
+        height: 100px;
+    }
+
+    h1{
+        @include secHeading;
+        color: $orange;
+        font-family: $sans-serif;
+        font-size: 28px;
+        line-height: 250%;
+        text-align: left;
+    }
+
+    .footer-links{
+        ul{
+            display: block;
+            list-style: none;
+            padding: 0ex;
+                li{
+                padding: 5px;
+                color: $grey;
+                font-family: $serif;
+                border-bottom: 2px solid #404040;
+                text-align: left;
+                font-size: 18px;
+                font-weight: normal;
+                text-transform: uppercase;
+
+                &:hover{
+                    background-color: $chilli-red;
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+
+    .emailus{
+        font-family: $serif;
+
+        .email{
+            padding-top: 30px;
+
+            img{
+                width: 54px;
+                height: 54px;
+                margin: 30px 10px;
+            }
+        }
+        
+        .emaillink{
+            input{
+                width: 60%;
+                height: 40px;
+            }
+
+            a{
+                width: 40%;
+                height: 40px;
+                background-color: $orange;
+                padding: 9px 20px 11px 20px;
+                text-decoration: none;
+                color: white;
+                font-size: 17px;
+
+                &:hover{
+                    background-color: $chilli-red;
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    span{
+        color: #777777;
+    }
+
+}

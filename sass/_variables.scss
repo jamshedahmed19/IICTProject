@@ -1,0 +1,31 @@
+// ----------variables ---------
+
+// color variables
+$bright-red: #F23005;
+$chilli-red: #8C0303;
+$chilli-green: #74BF04;
+$orange: #F28705;
+$yellow: #F2B705;
+$white: #f2f2f2;
+$black: #262626;
+$grey: #777777;
+
+// fonts variable
+
+// fonts import 
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+//--------------Importing End--------------------
+
+$script: 'Pacifico';
+$sans-serif: 'Lora';
+$serif: 'Raleway';
+$cursive: 'Satisfy';
+
+//typography
+
+$heading-hgt: 300%;
+$heading-size: 36px;
+$heading-font: $serif;

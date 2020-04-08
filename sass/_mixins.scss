@@ -1,0 +1,63 @@
+
+// media querry
+@mixin mQ($arg...) {
+    @if length($arg) ==1 {
+        @media screen and (max-width: nth($arg, 1)) {
+            @content;            
+        }
+    }
+
+    @if length($arg) == 2{
+        @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2)) {
+            @content;            
+        }
+    }
+}
+
+@mixin secHeading{
+    text-align: center;
+    line-height: $heading-hgt;
+    font-size: $heading-size;
+    color: $chilli-red;
+}
+
+@mixin overlay{
+    .img-fluid {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;        
+        background-color: $chilli-red;
+        overflow: hidden;
+        width: 90%;
+        margin-left: 14px;
+        height: 0;
+        transition: .5s ease;
+      }
+      
+       .col-lg-3:hover  .overlay, .col-md-6:hover  .overlay, .col-sm-12:hover .overlay {
+        height: 30%;
+        opacity: 0.65;
+      }
+      
+      .text {
+        font-family: $sans-serif;
+        color: $chilli-red;
+        font-size: 20px;
+        position: absolute;
+        padding: 3px 8px;
+        top: 50%;
+        left: 50%;
+        background-color: $chilli-green;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+}
