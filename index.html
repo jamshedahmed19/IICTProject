@@ -11,28 +11,48 @@
     <!--Scroll library-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- MY CSS -->
     <link rel="stylesheet" type="text/css" href="css/_style.css">
 
     <title>Food Guide pk</title>
   </head>
   <body>
+
+    <button id="scrollto-top">
+      <i class="material-icons">arrow_upwards</i>
+    </button>
+
      <!-- ****** Top Header Area Start ****** -->
      <header class="header_area">
-          <div class="top-area-container">
+          <div class="container-fluid">
           <!-- ****** Social icons Area Start ****** -->
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12 col-lg-6">
                     <div class="top-area">
-                        <a href="index.html" class="social-icons"><img src="images/icons/facebook.png"></a>
-                        <a href="index.html" class="social-icons"><img src="images/icons/instagram.png"></a>
-                        <a href="index.html" class="social-icons"><img src="images/icons/twitter.png"></a>
-                        <a href="index.html" class="social-icons"><img src="images/icons/youtube.png"></a>
-                        <a href="index.html" class="search-btn">
-                          <input type="search" name="search-btn" placeholder="Search...">
-                          <img src="images/icons/search.png"></a>
+                      <ul class="left">
+                        <li><a href="index.html" class="social-icons"><img src="images/icons/facebook.png"></a></li>
+                        <li><a href="index.html" class="social-icons"><img src="images/icons/instagram.png"></a></li>
+                        <li><a href="index.html" class="social-icons"><img src="images/icons/twitter.png"></a></li>
+                        <li><a href="index.html" class="social-icons"><img src="images/icons/youtube.png"></a></li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class="col-sm-12 col-lg-6">
+                  <div class="top-area">
+                      <ul class="right">
+                        <li><a href="pages/form1.html" class="social-icons">Login</a></li>
+                        <li><a href="pages/form2.html" class="social-icons">Sign up</a></li>
+                          <div>
+                            <img src="images/icons/search.png"/>
+                            <input type="text" placeholder="Search...">
+                          </div>
+                      </ul>
+                  </div>
+              </div>
             </div>
           </div>
 
@@ -136,33 +156,87 @@
   <div class="container">
     <h1>Our picks</h1>
     <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-left">
-        <a><img class="img-fluid" src="images/Content images/1.jpg" alt=""></a>
-        <div class="overlay">
-          <a><div class="text">Read More</div></a>
+      
+      <div class="col-lg-6 col-sm-12" data-aos="flip-left">
+        <div class="blog-post">
+          <div class="blog-post__img">
+            <img src="images/Content images/1.jpg">
+          </div>
+          <div class="blog-post__info">
+            <div class="blog-post__date">
+              <span>Wednesday</span>
+              <span>04 Oct 2020</span>
+            </div>
+            <h1 class="blog-post__title">Blog Post</h1>
+            <p class="blog-post__text">
+              Lorem ipsum ashsh tatxt ywyd  sausgasgdhas sadass asdasas adsdasd adasdasdas as asdasasas
+              asdasdnd asdasjdjad shhhs a..
+            </p>
+            <a href="" class="blog-post__link">Read More</a>
+          </div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-right">
-        <a><img class="img-fluid" src="images/Content images/2.jpg" alt=""></a>
-        <div class="overlay">
-          <a><div class="text">Read More</div></a>
-        </div>        
+      <div class="col-lg-6 col-sm-12" data-aos="flip-left">
+        <div class="blog-post">
+          <div class="blog-post__img">
+            <img src="images/Content images/1.jpg">
+          </div>
+          <div class="blog-post__info">
+            <div class="blog-post__date">
+              <span>Wednesday</span>
+              <span>04 Oct 2020</span>
+            </div>
+            <h1 class="blog-post__title">Blog Post</h1>
+            <p class="blog-post__text">
+              Lorem ipsum ashsh tatxt ywyd  sausgasgdhas sadass asdasas adsdasd adasdasdas as asdasasas
+              asdasdnd asdasjdjad shhhs a..
+            </p>
+            <a href="" class="blog-post__link">Read More</a>
+          </div>
+        </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-left">
-        <a><img class="img-fluid" src="images/Content images/2.jpg" alt=""></a>
-        <div class="overlay">
-          <a><div class="text">Read More</div></a>
-        </div>        
+      <div class="col-lg-6 col-sm-12" data-aos="flip-left">
+        <div class="blog-post">
+          <div class="blog-post__img">
+            <img src="images/Content images/1.jpg">
+          </div>
+          <div class="blog-post__info">
+            <div class="blog-post__date">
+              <span>Wednesday</span>
+              <span>04 Oct 2020</span>
+            </div>
+            <h1 class="blog-post__title">Blog Post</h1>
+            <p class="blog-post__text">
+              Lorem ipsum ashsh tatxt ywyd  sausgasgdhas sadass asdasas adsdasd adasdasdas as asdasasas
+              asdasdnd asdasjdjad shhhs a..
+            </p>
+            <a href="" class="blog-post__link">Read More</a>
+          </div>
+        </div>
       </div>
-      
-      <div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-right">
-        <a><img class="img-fluid" src="images/Content images/2.jpg" alt=""></a>
-        <div class="overlay">
-          <a><div class="text">Read More</div></a>
-        </div>        
+
+      <div class="col-lg-6 col-sm-12" data-aos="flip-left">
+        <div class="blog-post">
+          <div class="blog-post__img">
+            <img src="images/Content images/1.jpg">
+          </div>
+          <div class="blog-post__info">
+            <div class="blog-post__date">
+              <span>Wednesday</span>
+              <span>04 Oct 2020</span>
+            </div>
+            <h1 class="blog-post__title">Blog Post</h1>
+            <p class="blog-post__text">
+              Lorem ipsum ashsh tatxt ywyd  sausgasgdhas sadass asdasas adsdasd adasdasdas as asdasasas
+              asdasdnd asdasjdjad shhhs a..
+            </p>
+            <a href="" class="blog-post__link">Read More</a>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -179,22 +253,92 @@
 
   <div class="popular-section">
     <div class="container">
-        <h1>Popular Posts</h1>
-        <div class="row">
+      <h1>Popular Posts</h1>
+      <div class="row">
 
-          <div class="col-4">
-            
+
+        <div class="col-lg-6 col-sm-12" data-aos="flip-left">
+          <div class="blog-post">
+            <div class="blog-post__img">
+              <img src="images/Content images/1.jpg">
+            </div>
+            <div class="blog-post__info">
+              <div class="blog-post__date">
+                <span>Wednesday</span>
+                <span>04 Oct 2020</span>
+              </div>
+              <h1 class="blog-post__title">Blog Post</h1>
+              <p class="blog-post__text">
+                Lorem ipsum ashsh tatxt ywyd  sausgasgdhas sadass asdasas adsdasd adasdasdas as asdasasas
+                asdasdnd asdasjdjad shhhs a..
+              </p>
+              <a href="" class="blog-post__link">Read More</a>
+            </div>
           </div>
-
-          <div class="col-4">
-            
-          </div>
-
-          <div class="col-4">
-            
-          </div>
-
         </div>
+  
+        <div class="col-lg-6 col-sm-12" data-aos="flip-left">
+          <div class="blog-post">
+            <div class="blog-post__img">
+              <img src="images/Content images/1.jpg">
+            </div>
+            <div class="blog-post__info">
+              <div class="blog-post__date">
+                <span>Wednesday</span>
+                <span>04 Oct 2020</span>
+              </div>
+              <h1 class="blog-post__title">Blog Post</h1>
+              <p class="blog-post__text">
+                Lorem ipsum ashsh tatxt ywyd  sausgasgdhas sadass asdasas adsdasd adasdasdas as asdasasas
+                asdasdnd asdasjdjad shhhs a..
+              </p>
+              <a href="" class="blog-post__link">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="flip-left">
+          <div class="blog-post">
+            <div class="blog-post__img">
+              <img src="images/Content images/1.jpg">
+            </div>
+            <div class="blog-post__info">
+              <div class="blog-post__date">
+                <span>Wednesday</span>
+                <span>04 Oct 2020</span>
+              </div>
+              <h1 class="blog-post__title">Blog Post</h1>
+              <p class="blog-post__text">
+                Lorem ipsum ashsh tatxt ywyd  sausgasgdhas sadass asdasas adsdasd adasdasdas as asdasasas
+                asdasdnd asdasjdjad shhhs a..
+              </p>
+              <a href="" class="blog-post__link">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12" data-aos="flip-left">
+          <div class="blog-post">
+            <div class="blog-post__img">
+              <img src="images/Content images/1.jpg">
+            </div>
+            <div class="blog-post__info">
+              <div class="blog-post__date">
+                <span>Wednesday</span>
+                <span>04 Oct 2020</span>
+              </div>
+              <h1 class="blog-post__title">Blog Post</h1>
+              <p class="blog-post__text">
+                Lorem ipsum ashsh tatxt ywyd  sausgasgdhas sadass asdasas adsdasd adasdasdas as asdasasas
+                asdasdnd asdasjdjad shhhs a..
+              </p>
+              <a href="" class="blog-post__link">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   </div>
 
@@ -247,6 +391,20 @@
   </div>
 </footer>
 
+<script>
+  const scrollto_top = document.querySelector("#scrollto-top");
+
+  scrollto_top.addEventListener("click", function (){
+
+    // window.scrollTo(0, 0);
+
+      window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"});
+  });
+</script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({
@@ -256,6 +414,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

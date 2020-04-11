@@ -1,0 +1,136 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/*-----------Head-------------*/
+
+body{
+	background: rgb(19,194,189);
+	background: linear-gradient(90deg, rgba(19,194,189,1) 5%, rgba(23,119,162,1) 44%, rgba(25,45,116,1) 91%);
+	font-family: Raleway;
+}
+
+.account-reg{
+	width: 740px;
+	margin: 30px auto;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 2px 8px 21px -9px rgba(0,0,0,0.75);
+}
+
+.form-head{
+	background-color: #F2F2F2;
+	border-radius: 10px 10px 0px 0px;
+	height: 60px;
+}
+
+.form-head h1{
+	text-align: center;
+	padding: 10px 0px;
+	color: #2E3640;
+}
+
+/*-----------Body-------------*/
+
+.form-body{
+	color: #2E3640;
+	padding: 20px 40px;
+	height: auto;
+}
+
+.input-title{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgba(19,194,189,1);
+}
+
+.form-input{
+	font-size: 18px;
+	width: 100%;
+	height: 34px;
+	border: 1px solid #F2F2F2;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #2E3640;
+	outline: none;
+}
+
+.group-input{
+	margin-bottom: 20px;
+}
+
+.left{
+	float: left;
+	width: 49%;
+}
+
+.right{
+	float: right;
+	width: 49%;
+}
+
+#radio{
+	font-size: 18px;
+	color: #2E3640;
+}
+
+#experience{
+	height:34px;
+	width:83%;
+	padding:0;
+}
+
+#range-label {
+ 	width:16%;
+ 	padding:5px;
+ 	background-color: rgba(19,194,189,1);
+ 	color:white;
+ 	border-radius: 5px;
+	font-size: 17px;
+ 	position: relative;
+ 	top:-8px;
+}
+
+.options{
+	width: 100%;
+}
+
+#choose-file {
+ outline: none;
+ cursor:pointer;
+ font-size: 17px;
+}
+
+textarea{
+	resize: vertical;
+	min-height: 100px;
+}
+
+/*-------------FORM FOOTER--------------*/
+.form-foot{
+	background-color: #F2F2F2;
+	height: 70px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+Button{
+	float: right;
+	background-color: rgba(19,194,189,1);
+	color: white;
+	border: 1px solid rgba(19,194,189,1);
+	padding: 12px 20px;
+	margin: 12px 40px;
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: bolder;
+	box-shadow: 2px 8px 21px -9px rgba(0,0,0,0.75);
+}
+
+Button:hover{
+	background-color: white;
+	color: rgba(19,194,189,1);
+	transition: .5s;
+}

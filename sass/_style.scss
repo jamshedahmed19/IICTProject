@@ -9,38 +9,88 @@
 
 // ---------------header area--------------------
 
+#scrollto-top{
+    position: fixed;
+    background-color: $orange;
+    right: 40px;
+    bottom: 40px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    box-shadow: $shadow;
+    border: none;
+    color: white;
+    z-index: 99;
+
+    &:active{
+        background-color: $chilli-red;
+    }
+}
+
+
+
+
 // social icons
 
-.top-area-container{
+.container-fluid{
     width: 100%;
     border-bottom: 1px solid #f2f2f2;
+    .left{
+        display: block;
+        margin: 12px 0;
 
-    .social-icons img{
-        height: 24px;
-        width: 24px;
-        margin: 13px 0px 13px 10px;
+        li{
+            display: inline-block;
+            margin: 5px 10px;
+            
+            .social-icons img{
+                height: 24px;
+                width: 24px;              
 
-        &:hover{
-            height: 32px;
-            width: 32px;
-            transition: 0.5s;
-            margin: 9px 0px 9px 10px;
+                &:hover{
+                    height: 36px;
+                    width: 36px;
+                    transition: 0.5s;
+                }
+            }
         }
     }
 
-    .search-btn{
-        float: right;
+    .right{
+        display: block;
+        margin: 12px 0;
+        text-align: right;
 
-        img{
-            height: 24px;
-            width: 24px;
-            margin: 13px 10px 13px 0px;
-        
-            &:hover{
-                height: 32px;
-                width: 32px;
-                transition: 0.5s;
-                margin: 9px 10px 9px 0px;
+        li{
+            display: inline-block;
+            margin: 5px 10px;
+            font-size: 16px;
+            font-weight: 400;
+            a{
+                color: black;
+            }
+        }
+
+        div{
+
+            border: 1px solid black;
+            border-radius: 20px;
+            display: inline-flex;
+            margin-right: 30px;
+
+            img{
+                height: 12px;
+                width: 12px;
+                margin: 6px;
+            }
+
+            input{
+                outline: none;
+                border: none;
+                padding: 3px;
+                font-size: 12px;
             }
         }
     }
@@ -122,6 +172,10 @@
 // ourpicks-section
 
 .ourpicks-section{
+
+    margin-bottom: 50px;
+    @include card;
+
     h1{
         @include secHeading;
     }
@@ -134,14 +188,15 @@
 
 // Popular section Area start
 
-.popular-section{    
+
+.popular-section{   
+    margin-bottom: 50px;
+    @include card;
     h1{
         @include secHeading;
     }
-}
 
-.popular-posts .cards{
-    display: inline;
+    @include overlay;
 }
 
 //popular section ended
@@ -221,8 +276,9 @@
                 width: 40%;
                 height: 40px;
                 background-color: $orange;
-                padding: 9px 20px 11px 20px;
+                padding: 10px 20px 10px 20px;
                 text-decoration: none;
+                letter-spacing: 2px;
                 color: white;
                 font-size: 17px;
 

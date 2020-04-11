@@ -13,34 +13,84 @@ a:hover:active {
   color: black;
 }
 
-.top-area-container {
+ul {
+  list-style: none;
+}
+
+li {
+  color: black;
+}
+
+#scrollto-top {
+  position: fixed;
+  background-color: #F28705;
+  right: 40px;
+  bottom: 40px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+  border: none;
+  color: white;
+  z-index: 99;
+}
+#scrollto-top:active {
+  background-color: #8C0303;
+}
+
+.container-fluid {
   width: 100%;
   border-bottom: 1px solid #f2f2f2;
 }
-.top-area-container .social-icons img {
+.container-fluid .left {
+  display: block;
+  margin: 12px 0;
+}
+.container-fluid .left li {
+  display: inline-block;
+  margin: 5px 10px;
+}
+.container-fluid .left li .social-icons img {
   height: 24px;
   width: 24px;
-  margin: 13px 0px 13px 10px;
 }
-.top-area-container .social-icons img:hover {
-  height: 32px;
-  width: 32px;
+.container-fluid .left li .social-icons img:hover {
+  height: 36px;
+  width: 36px;
   transition: 0.5s;
-  margin: 9px 0px 9px 10px;
 }
-.top-area-container .search-btn {
-  float: right;
+.container-fluid .right {
+  display: block;
+  margin: 12px 0;
+  text-align: right;
 }
-.top-area-container .search-btn img {
-  height: 24px;
-  width: 24px;
-  margin: 13px 10px 13px 0px;
+.container-fluid .right li {
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 16px;
+  font-weight: 400;
 }
-.top-area-container .search-btn img:hover {
-  height: 32px;
-  width: 32px;
-  transition: 0.5s;
-  margin: 9px 10px 9px 0px;
+.container-fluid .right li a {
+  color: black;
+}
+.container-fluid .right div {
+  border: 1px solid black;
+  border-radius: 20px;
+  display: inline-flex;
+  margin-right: 30px;
+}
+.container-fluid .right div img {
+  height: 12px;
+  width: 12px;
+  margin: 6px;
+}
+.container-fluid .right div input {
+  outline: none;
+  border: none;
+  padding: 3px;
+  font-size: 12px;
 }
 
 .logo_area img {
@@ -89,6 +139,7 @@ a:hover:active {
   text-align: center;
   line-height: 300%;
   font-size: 36px;
+  font-family: "Satisfy";
   color: #8C0303;
 }
 
@@ -97,10 +148,102 @@ a:hover:active {
   height: 600px;
 }
 
+.ourpicks-section {
+  margin-bottom: 50px;
+}
+.ourpicks-section .blog-post {
+  width: 90%;
+  height: 15rem;
+  min-width: 18rem;
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  align-items: center;
+  border-radius: 20px;
+  margin: 50px 50px;
+}
+.ourpicks-section .blog-post__img {
+  min-width: 10rem;
+  max-width: 10rem;
+  height: 8rem;
+  transform: translateX(-60px);
+  position: relative;
+}
+.ourpicks-section .blog-post__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+.ourpicks-section .blog-post__img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(242, 135, 5, 0.5298494398) 0%, rgba(140, 3, 3, 0.5830707283) 100%);
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+  border-radius: 0.8rem;
+}
+.ourpicks-section .blog-post__date span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #8C0303;
+  margin: 2px 0;
+}
+.ourpicks-section .blog-post__title {
+  font-size: 18px;
+  margin: 2px 3px;
+  text-transform: uppercase;
+  color: #F28705;
+  font-family: "Raleway";
+}
+.ourpicks-section .blog-post__text {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.ourpicks-section .blog-post__link {
+  display: inline-block;
+  padding: 6px 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+  background: #8C0303;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.ourpicks-section .blog-post__link:hover {
+  background: #F28705;
+}
+@media screen and (max-width: 980px) {
+  .ourpicks-section .blog-post {
+    height: 23rem;
+    padding: 5px;
+    flex-direction: column;
+  }
+  .ourpicks-section .blog-post__img {
+    max-width: 60%;
+    height: 10rem;
+    transform: translateY(-50px);
+  }
+  .ourpicks-section .blog-post__date span,
+.ourpicks-section .blog-post__text {
+    margin-left: 30px;
+  }
+  .ourpicks-section .blog-post__link {
+    float: right;
+    margin: 8px 50px;
+  }
+}
 .ourpicks-section h1 {
   text-align: center;
   line-height: 300%;
   font-size: 36px;
+  font-family: "Satisfy";
   color: #8C0303;
 }
 .ourpicks-section .img-fluid {
@@ -127,9 +270,9 @@ a:hover:active {
 .ourpicks-section .text {
   font-family: "Lora";
   color: #8C0303;
-  font-size: 20px;
+  font-size: 12px;
   position: absolute;
-  padding: 3px 8px;
+  margin: 3px 10px;
   top: 50%;
   left: 50%;
   background-color: #74BF04;
@@ -137,15 +280,136 @@ a:hover:active {
   text-align: center;
 }
 
+.popular-section {
+  margin-bottom: 50px;
+}
+.popular-section .blog-post {
+  width: 90%;
+  height: 15rem;
+  min-width: 18rem;
+  padding: 30px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+  align-items: center;
+  border-radius: 20px;
+  margin: 50px 50px;
+}
+.popular-section .blog-post__img {
+  min-width: 10rem;
+  max-width: 10rem;
+  height: 8rem;
+  transform: translateX(-60px);
+  position: relative;
+}
+.popular-section .blog-post__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+.popular-section .blog-post__img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(242, 135, 5, 0.5298494398) 0%, rgba(140, 3, 3, 0.5830707283) 100%);
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+  border-radius: 0.8rem;
+}
+.popular-section .blog-post__date span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #8C0303;
+  margin: 2px 0;
+}
+.popular-section .blog-post__title {
+  font-size: 18px;
+  margin: 2px 3px;
+  text-transform: uppercase;
+  color: #F28705;
+  font-family: "Raleway";
+}
+.popular-section .blog-post__text {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.popular-section .blog-post__link {
+  display: inline-block;
+  padding: 6px 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+  background: #8C0303;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.popular-section .blog-post__link:hover {
+  background: #F28705;
+}
+@media screen and (max-width: 980px) {
+  .popular-section .blog-post {
+    height: 23rem;
+    padding: 5px;
+    flex-direction: column;
+  }
+  .popular-section .blog-post__img {
+    max-width: 60%;
+    height: 10rem;
+    transform: translateY(-50px);
+  }
+  .popular-section .blog-post__date span,
+.popular-section .blog-post__text {
+    margin-left: 30px;
+  }
+  .popular-section .blog-post__link {
+    float: right;
+    margin: 8px 50px;
+  }
+}
 .popular-section h1 {
   text-align: center;
   line-height: 300%;
   font-size: 36px;
+  font-family: "Satisfy";
   color: #8C0303;
 }
-
-.popular-posts .cards {
-  display: inline;
+.popular-section .img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.popular-section .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #8C0303;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 14px;
+  height: 0;
+  transition: 0.5s ease;
+}
+.popular-section .col-lg-3:hover .overlay, .popular-section .col-md-6:hover .overlay, .popular-section .col-sm-12:hover .overlay {
+  height: 30%;
+  opacity: 0.65;
+}
+.popular-section .text {
+  font-family: "Lora";
+  color: #8C0303;
+  font-size: 12px;
+  position: absolute;
+  margin: 3px 10px;
+  top: 50%;
+  left: 50%;
+  background-color: #74BF04;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .footer-container {
@@ -168,6 +432,7 @@ a:hover:active {
   text-align: center;
   line-height: 300%;
   font-size: 36px;
+  font-family: "Satisfy";
   color: #8C0303;
   color: #F28705;
   font-family: "Lora";
@@ -213,8 +478,9 @@ a:hover:active {
   width: 40%;
   height: 40px;
   background-color: #F28705;
-  padding: 9px 20px 11px 20px;
+  padding: 10px 20px 10px 20px;
   text-decoration: none;
+  letter-spacing: 2px;
   color: white;
   font-size: 17px;
 }
