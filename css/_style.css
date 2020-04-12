@@ -134,6 +134,85 @@ li {
 }
 
 /* ======== Header Area End ======= */
+.faqs-section {
+  margin: 30px 80px;
+}
+.faqs-section h1 {
+  margin: 30px 20px;
+}
+.faqs-section h3 {
+  padding: 5px 10px;
+  background-color: rgba(184, 22, 22, 0.08);
+  border-left: 4px solid #8C0303;
+}
+.faqs-section h3 span {
+  font-size: 36px;
+  color: #8C0303;
+  margin-right: 10px;
+  font-family: serif;
+  font-weight: bold;
+}
+.faqs-section p {
+  padding: 5px 10px;
+  background-color: rgba(223, 134, 18, 0.08);
+  border-left: 4px solid #F28705;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.faqs-section p span {
+  font-size: 36px;
+  color: #F28705;
+  margin-right: 10px;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.aboutus-section {
+  margin: 30px 80px;
+}
+.aboutus-section h1 {
+  margin: 30px 20px;
+}
+.aboutus-section p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 30px;
+  letter-spacing: 1px;
+}
+.aboutus-section q {
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(223, 134, 18, 0.08);
+  border-left: 4px solid #F28705;
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 200%;
+}
+
+.contactus-section {
+  margin: 30px 80px;
+}
+.contactus-section h3 {
+  padding: 5px 10px;
+  background-color: rgba(184, 22, 22, 0.08);
+  border-left: 4px solid #8C0303;
+}
+.contactus-section #googleMap {
+  margin: 30px 0;
+}
+.contactus-section p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 30px;
+  letter-spacing: 1px;
+}
+.contactus-section a {
+  font-size: 24px;
+}
+
 /* ======== Welcome Area start ======= */
 .welcome-section h1 {
   text-align: center;
