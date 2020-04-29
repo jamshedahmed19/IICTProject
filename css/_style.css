@@ -237,6 +237,12 @@ li {
   width: 100%;
   max-height: 500px !important;
 }
+.carousel-inner .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .carousel-inner .carousel-item {
   width: 100%;
