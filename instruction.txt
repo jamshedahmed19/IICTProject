@@ -1,0 +1,33 @@
+1) only search content while fall into  these categories  ----> restaurants,desi,fastfood,desserts
+2) first save the file in pages/resturants folder
+3) copy the whole code from another .html file in the folder
+
+now follow the video biatch
+
+
+suppose i want create a page in desserts category
+
+now i have to change coding
+
+first go to content section change the h1 with the category name and div.text with blog heading
+
+now copy paste the text in the first p tag if you have into text otherwise cut it
+
+now change the heading and p tag as you want according to your content
+
+now lets see how it looks and
+
+
+for images now see ... only save images in the content images/pages folder which is inside images/ folder
+
+if you have images in your content follow the step 3 differently only copy from .html which has images in the content
+like lahore.html
+put the img tag under p tag but above second heading
+
+for main image save image in content images/card folder and just change the image name here follow cursor
+
+now do this for all headings 
+
+for content img like this one do this 
+
+done!!
