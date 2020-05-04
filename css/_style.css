@@ -809,6 +809,10 @@ li {
   background-color: #8C0303;
   color: #F28705;
 }
+.footer-container .footer-links ul li a {
+  text-decoration: none;
+  color: #777777;
+}
 .footer-container .emailus {
   font-family: "Raleway";
 }
